@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Javscript</title>
+    <script>
+        function loadfunc()
+        {
+            var welcomeText=document.createElement("p");
+            var textNode=document.createTextNode("Welcome to Javascript Programming!")
+            welcomeText.appendChild(textNode);
+            document.body.appendChild(welcomeText);
+
+        }
+
+        function displayColoredText()
+        {
+            var coloredText=document.createElement("p");
+            var textNode=document.createTextNode("This is a colored text!")
+            coloredText.appendChild(textNode);
+            coloredText.style.color="red";
+            document.body.appendChild(coloredText);
+        }
+
+        function displayWithAlert()
+        {
+            alert("This is displayed with an alert dialog!");
+        }
+
+        function displayPromptName()
+        {
+            var name=prompt("Please enter your Name:");
+            if (name!==null && name!=="")
+            {
+                alert("Your name is: "+name);
+            }else
+            {
+                alert("You didn't enter a Name.")
+            }
+        }
+    </script>
+    <body onload="loadfunc()">
+        <button onclick="displayColoredText()">Display Colored Text</button>
+        <button onclick="displayWithAlert()">Display With Alert</button>
+        <button onclick="displayPromptName()">Display Prompt Name</button>
+    </body>
+    </html>

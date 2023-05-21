@@ -1,0 +1,42 @@
+h1
+    {
+        color:blue;
+        font-family:Century;
+	    text-align:center;
+    }
+            
+h2
+    {
+        color:red;
+        font-family:Cursive;
+	    font-size:130%;
+	    text-align:left;
+    }
+            
+a
+    {
+        color:blue;
+        text-decoration:none;
+    }
+
+a:hover
+    {
+     background-color:yellow;
+    }
+
+.nav-button
+    {
+        display:inline-block;
+        padding:10px 20px;
+        text-decoration:none;
+        border:2px solid purple;
+        background-color:lightpink;
+        color:blue;
+    }
+
+.nav-button:hover
+    {
+        border-color:purple;
+        background-color:lightpink;
+        color:violet;
+    }
